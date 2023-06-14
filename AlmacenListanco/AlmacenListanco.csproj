@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DC9644E-760D-4616-9CC2-692155F69E76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AlmacenListanco</RootNamespace>
+    <AssemblyName>AlmacenListanco</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.4.0.1044, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.4.0.1044\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyChanged, Version=2.5.5.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>..\packages\PropertyChanged.Fody.2.5.5\lib\net452\PropertyChanged.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AltaCoche.xaml.cs">
+      <DependentUpon>AltaCoche.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarPieza.xaml.cs">
+      <DependentUpon>AsignarPieza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\AlmacenDB.cs" />
+    <Compile Include="BaseDatos\GenericRepository.cs" />
+    <Compile Include="BaseDatos\RepositorioArreglo.cs" />
+    <Compile Include="BaseDatos\RepositorioCoche.cs" />
+    <Compile Include="BaseDatos\RepositorioCompra.cs" />
+    <Compile Include="BaseDatos\RepositorioEmpresa.cs" />
+    <Compile Include="BaseDatos\RepositorioFactura.cs" />
+    <Compile Include="BaseDatos\RepositorioPieza.cs" />
+    <Compile Include="BaseDatos\RepositorioPropietario.cs" />
+    <Compile Include="BaseDatos\UnitOfWork.cs" />
+    <Compile Include="BuscadorClientes.xaml.cs">
+      <DependentUpon>BuscadorClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BuscadorPiezas.xaml.cs">
+      <DependentUpon>BuscadorPiezas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarDatos.xaml.cs">
+      <DependentUpon>CambiarDatos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Conect.xaml.cs">
+      <DependentUpon>Conect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGarantias.xaml.cs">
+      <DependentUpon>ControlGarantias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarArreglo.xaml.cs">
+      <DependentUpon>GenerarArreglo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarFacturaProforma.xaml.cs">
+      <DependentUpon>GenerarFacturaProforma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805082033337_inicial.cs" />
+    <Compile Include="Migrations\201805082033337_inicial.Designer.cs">
+      <DependentUpon>201805082033337_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805210726429_21.05.cs" />
+    <Compile Include="Migrations\201805210726429_21.05.Designer.cs">
+      <DependentUpon>201805210726429_21.05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805210808226_21.05_2.cs" />
+    <Compile Include="Migrations\201805210808226_21.05_2.Designer.cs">
+      <DependentUpon>201805210808226_21.05_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805230807566_23.04.cs" />
+    <Compile Include="Migrations\201805230807566_23.04.Designer.cs">
+      <DependentUpon>201805230807566_23.04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805311114071_31.05.cs" />
+    <Compile Include="Migrations\201805311114071_31.05.Designer.cs">
+      <DependentUpon>201805311114071_31.05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806040833300_04.06.cs" />
+    <Compile Include="Migrations\201806040833300_04.06.Designer.cs">
+      <DependentUpon>201806040833300_04.06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806070951071_07.06.cs" />
+    <Compile Include="Migrations\201806070951071_07.06.Designer.cs">
+      <DependentUpon>201806070951071_07.06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809281019218_28.07.cs" />
+    <Compile Include="Migrations\201809281019218_28.07.Designer.cs">
+      <DependentUpon>201809281019218_28.07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810021253023_02.10.cs" />
+    <Compile Include="Migrations\201810021253023_02.10.Designer.cs">
+      <DependentUpon>201810021253023_02.10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810030956147_03.10.cs" />
+    <Compile Include="Migrations\201810030956147_03.10.Designer.cs">
+      <DependentUpon>201810030956147_03.10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modelo\Arreglo.cs" />
+    <Compile Include="Modelo\Coche.cs" />
+    <Compile Include="Modelo\Compra.cs" />
+    <Compile Include="Modelo\Empresa.cs" />
+    <Compile Include="Modelo\Factura.cs" />
+    <Compile Include="Modelo\Pieza.cs" />
+    <Compile Include="Modelo\Propietario.cs" />
+    <Compile Include="Prueba.cs">
+      <DependentUpon>Prueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaReport.xaml.cs">
+      <DependentUpon>PruebaReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="VentanaConfirmacion.xaml.cs">
+      <DependentUpon>VentanaConfirmacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaError.xaml.cs">
+      <DependentUpon>VentanaError.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AltaCoche.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AsignarPieza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuscadorClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuscadorPiezas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CambiarDatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Conect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlGarantias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GenerarArreglo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GenerarFacturaProforma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ModificarArreglo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PruebaReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VentanaConfirmacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VentanaError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModificarArreglo.xaml.cs">
+      <DependentUpon>ModificarArreglo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Migrations\201805082033337_inicial.resx">
+      <DependentUpon>201805082033337_inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805210726429_21.05.resx">
+      <DependentUpon>201805210726429_21.05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805210808226_21.05_2.resx">
+      <DependentUpon>201805210808226_21.05_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805230807566_23.04.resx">
+      <DependentUpon>201805230807566_23.04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805311114071_31.05.resx">
+      <DependentUpon>201805311114071_31.05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806040833300_04.06.resx">
+      <DependentUpon>201806040833300_04.06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806070951071_07.06.resx">
+      <DependentUpon>201806070951071_07.06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809281019218_28.07.resx">
+      <DependentUpon>201809281019218_28.07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810021253023_02.10.resx">
+      <DependentUpon>201810021253023_02.10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810030956147_03.10.resx">
+      <DependentUpon>201810030956147_03.10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Prueba.xsc">
+      <DependentUpon>Prueba.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Prueba.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Prueba.xss">
+      <DependentUpon>Prueba.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.3.0.3\build\Fody.targets" Condition="Exists('..\packages\Fody.3.0.3\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.3.0.3\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.0.3\build\Fody.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="AlmacenListanco.ControlGarantias"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlmacenListanco"
+        mc:Ignorable="d"
+        Title="ControlGarantias" Height="300" Width="300">
+    <Grid x:Name="ConGarantia">
+        <Label x:Name="label" Content="¿Este Arreglo se encuentra dentro de :&#xD;&#xA; la tramitación de una garantía?" VerticalAlignment="Bottom" Height="109" Margin="49,0,38,91"/>
+        <Button x:Name="Si_Garantia" Content="SI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="166,157,0,0" Click="Si_Garantia_Click"/>
+       
+        <Button x:Name="No_Garanía" Content="NO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="49,157,0,0" Click="No_Garanía_Click"/>
+    </Grid>
+</Window>

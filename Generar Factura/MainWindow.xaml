@@ -1,0 +1,26 @@
+﻿<Window x:Class="Generar_Factura.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Generar_Factura"
+        mc:Ignorable="d"
+        Title="Generar Factura" Height="506" Width="859">
+    <Grid Margin="0,0,2,5">
+
+        <Label Content="Numero Factura" HorizontalAlignment="Left" Margin="33,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" Grid.ColumnSpan="2" Width="101"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="165,23,0,0"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="302,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="374,23,0,0"/>
+        <Label Content="Bastidor:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="226,103,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="79,103,0,0"/>
+        <Label Content="Matrícula" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,103,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Margin="287,103,0,0"/>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="17,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="79,150,0,0"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="226,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="287,150,0,0"/>
+        <Label Content="Kilometros" HorizontalAlignment="Left" Margin="584,100,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="685,100,0,0"/>
+    </Grid>
+</Window>

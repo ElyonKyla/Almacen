@@ -1,0 +1,40 @@
+﻿<Window x:Class="AlmacenListanco.BuscadorPiezas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlmacenListanco"
+        mc:Ignorable="d"
+        Title="BuscadorPiezas" Height="749.553" Width="594.21">
+    <Grid x:Name="BuscadorPieza">
+
+        <Label Content="Referencia:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,85,0,0" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="ReferenciaTBal" Text="{Binding Path=IdPieza}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="146,66,0,0"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="52,152,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="NombreTBal" Text="{Binding Path=Nombre}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="342" Margin="146,133,0,0"/>
+        <Label Content="Fabricante" HorizontalAlignment="Left" Margin="52,233,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Coche" HorizontalAlignment="Left" Margin="59,308,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontSize="14" FontWeight="Bold"/>
+      
+        <TextBox x:Name="CasaTBal" Text="{Binding Path=Casa}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="146,214,0,0"/>
+        <TextBox x:Name="MarcaTBal" Text="{Binding Path=Marca}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="146,292,0,0"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="290,305,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="ModeloTBal" Text="{Binding Path=Modelo}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="368,292,0,0" />
+        <Label Content="Variante" HorizontalAlignment="Left" Margin="290,230,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="VarianteTBal" Text="{Binding Path=Variante}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="368,214,0,0"/>
+
+        <Button x:Name="Buscador_button" Content="Buscar Pieza" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="244,361,0,0" Click="Buscador_button_Click" />
+        <DataGrid x:Name="Piezas_DataGrid" AutoGenerateColumns="False"  HorizontalAlignment="Left" Height="218" Margin="55,411,0,0" VerticalAlignment="Top" Width="489" SelectionChanged="Piezas_DataGrid_SelectionChanged" FontStyle="Italic" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Referencia" Binding="{Binding Path=IdPieza}"/>
+                <DataGridTextColumn Header="Descripción" Binding="{Binding Path=Nombre}"/>
+                <DataGridTextColumn Header="Fabricante" Binding="{Binding Path=Casa}"/>
+                <DataGridTextColumn Header="Vehiculo" Binding="{Binding Path=Marca}"/>
+                <DataGridTextColumn Header="Modelo" Binding="{Binding Path=Modelo}"/>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

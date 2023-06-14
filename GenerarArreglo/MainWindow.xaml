@@ -1,0 +1,38 @@
+﻿<Window x:Class="GenerarArreglo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GenerarArreglo"
+        mc:Ignorable="d"
+        Title="Generar Arreglo" Height="478.093" Width="653.093">
+    <Grid>
+
+
+        <Label Content="Bastidor:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,78,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="78,78,0,0"/>
+        <Label Content="Matrícula" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,78,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Margin="286,78,0,0"/>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="16,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="78,125,0,0"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="225,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="286,125,0,0"/>
+        <Button Content="Historial Arreglos" HorizontalAlignment="Left" Margin="679,439,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label Content="Factura" HorizontalAlignment="Left" Margin="16,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <Label Content="Arreglo" HorizontalAlignment="Left" Margin="225,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="286,21,0,0"/>
+        <Label Content="Referencia" HorizontalAlignment="Left" Margin="16,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="78,185,0,0"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="225,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="286,185,0,0"/>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="417,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="478,185,-16,0"/>
+        <ListBox HorizontalAlignment="Left" Height="147" Margin="16,246,0,0" VerticalAlignment="Top" Width="582"/>
+        <Button Content="Generar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="523,409,0,0"/>
+        <ComboBox HorizontalAlignment="Left" Margin="78,22,0,0" VerticalAlignment="Top" Width="120"/>
+
+
+
+
+    </Grid>
+</Window>

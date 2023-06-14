@@ -1,0 +1,36 @@
+﻿<Window x:Class="AlmacenListanco.GenerarArreglo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlmacenListanco"
+        mc:Ignorable="d"
+        Title="GenerarArreglo" Height="749.553" Width="1320.503">
+    <Grid x:Name="GenArreglo">
+        <Label Content="Bastidor:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="488,60,0,0" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="MatriculaTB" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Margin="202,44,0,0"/>
+        <Label Content="Matrícula" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,60,0,0" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="BastidorTB" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Margin="566,44,0,0"/>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="114,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="MarcaTB" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Margin="202,116,0,0"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="488,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="ModeloTB" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" Margin="566,116,0,0"/>
+        <Label Content="Factura" HorizontalAlignment="Left" Margin="114,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Arreglo" HorizontalAlignment="Left" Margin="488,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.381,0.219" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="ArregloTB" Text="{Binding Path= IdAreglo}" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="566,241,0,0"/>
+        <Button x:Name="GenArreglo_button" Content="Generar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="1027,586,0,0" Click="GenArreglo_button_Click"/>
+        <ComboBox x:Name="FacturaCB" SelectedValue="{Binding Path=IdFactura}" HorizontalAlignment="Left" Margin="227,241,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="FacturaCB_SelectionChanged" Height="42"/>
+        <Label Content="Nombre del arreglo" HorizontalAlignment="Left" Margin="114,336,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox  x:Name="tituloArreglo" Text="{Binding Path= Titulo}" HorizontalAlignment="Left" Height="42" Margin="263,320,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="492"/>
+        <Button Content="Buscar Piezas" HorizontalAlignment="Left" Margin="1006,330,0,0" VerticalAlignment="Top" Width="154" Click="Button_Click"/>
+        <DataGrid x:Name="PiezasArreglo_DataGrid"  AutoGenerateColumns="False" HorizontalAlignment="Left" Height="156" Margin="114,0,0,176" VerticalAlignment="Bottom" Width="1046" FontStyle="Italic">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Referencia" Binding="{Binding Path=IdPieza}"/>
+                <DataGridTextColumn Header="Descripción" Binding="{Binding Path=Nombre}"/>
+                <DataGridTextColumn Header="Fabricante" Binding="{Binding Path=Casa}"/>
+                <DataGridTextColumn Header="Proveedor" Binding="{Binding Path=Proovedor.Nombre}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
